@@ -1,0 +1,128 @@
+
+    /* Container - oq va kichik soyali, silliq burchaklar */
+    .kro-container {
+        background: #ffffff;
+        max-width: 880px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 30px 35px;
+        border-radius: 12px;
+        /* box-shadow: 0 6px 12px rgba(0,0,0,0.1); */
+        box-sizing: border-box;
+      }
+  
+      /* Title */
+      .kro-title {
+        font-size: 2rem;
+        color: #3b4252; /* to'q kulrang */
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+        letter-spacing: 0.05em;
+        user-select: none;
+      }
+  
+      /* Labels */
+      .kro-label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #4c566a;
+        font-size: 0.9rem;
+      }
+  
+      /* Inputs and selects */
+      .kro-input-text,
+      .kro-input-email,
+      .kro-input-tel,
+      .kro-select {
+        width: 100%;
+        padding: 12px 14px;
+        margin-bottom: 20px;
+        border: 1.8px solid #d8dee9;
+        border-radius: 8px;
+        font-size: 1rem;
+        color: #2e3440;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        box-sizing: border-box;
+        background-color: #fefefe;
+      }
+  
+      .kro-input-text::placeholder,
+      .kro-input-email::placeholder,
+      .kro-input-tel::placeholder {
+        color: #a0a7b5;
+        font-style: italic;
+      }
+  
+      .kro-input-text:focus,
+      .kro-input-email:focus,
+      .kro-input-tel:focus,
+      .kro-select:focus {
+        border-color: #5e81ac;
+        box-shadow: 0 0 6px #81a1c1aa;
+        outline: none;
+        background-color: #ffffff;
+      }
+  
+      /* Submit button */
+      .kro-button {
+        width: 100%;
+        padding: 14px 0;
+        background: #5e81ac;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: 700;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        user-select: none;
+      }
+      .kro-button:hover {
+        background: #4c6f9f;
+      }
+      .kro-button:active {
+        background: #3b567f;
+      }
+  
+      /* Result box */
+      .kro-result {
+        margin-top: 35px;
+        background: #e5e9f0;
+        border: 1.5px solid #5e81ac;
+        padding: 25px 30px;
+        border-radius: 12px;
+        color: #3b4252;
+        font-size: 1rem;
+        display: none;
+        user-select: text;
+      }
+      .kro-result h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-weight: 700;
+        color: #4c566a;
+        letter-spacing: 0.05em;
+      }
+      .kro-result p {
+        margin: 7px 0;
+        line-height: 1.4;
+      }
+      .kro-result strong {
+        color: #5e81ac;
+      }
+  
+      /* Responsive */
+      @media (max-width: 520px) {
+        .kro-container {
+          padding: 25px 20px;
+        }
+        .kro-title {
+          font-size: 1.7rem;
+        }
+        .kro-button {
+          font-size: 1rem;
+          padding: 12px 0;
+        }
+      }
